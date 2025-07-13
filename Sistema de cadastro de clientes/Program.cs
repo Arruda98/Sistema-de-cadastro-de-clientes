@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.Design;
+using System.Runtime.Intrinsics.Arm;
 
 namespace Cadastro
 {
@@ -20,7 +21,7 @@ namespace Cadastro
             Console.WriteLine("====== Sistema de cadastro de Cliente ======\n");
 
             Console.WriteLine("Escolha uma opção: ");
-            Console.WriteLine("1 - Cadastrar Cliente\n2 - Listar Clientes\n3 - Remover Clientes\n4 - Sair");
+            Console.WriteLine("1 - Cadastrar Cliente\n2 - Listar Clientes\n3 - Remover Clientes\n4 - Sair\n");
             
             resposta = double.Parse(Console.ReadLine());
 
@@ -30,8 +31,7 @@ namespace Cadastro
                 case 2: Listar(); break;
                 case 3: Remover(); break;
                 case 4: Sair(); break;
-                default:
-                    break;
+                default: break;
             }
 
             Menu();
@@ -43,9 +43,36 @@ namespace Cadastro
 
             Console.WriteLine("====== Cadastro de Cliente ======");
 
-            Console.WriteLine("Digite o nome do Cliente: ");
-            pessoas.Add(Console.ReadLine());
+            while (true)
+            {
+                Console.Clear();
 
+                Console.WriteLine("Digite o nome do Cliente: ");
+                pessoas.Add(Console.ReadLine());
+
+                Console.Clear();
+
+                Console.WriteLine("Deseja adicionar outro cliente?");
+                var resposta = Console.ReadLine();
+
+                if (resposta == null || resposta == "")
+                {
+                    Console.Clear();
+
+                    Console.WriteLine("Você digitou errado, tente novamente.");
+                    Thread.Sleep(1000);
+                    continue;
+                }
+
+                else if (resposta == "Sim")
+                {
+                    continue;
+                }
+
+                else
+                    break;
+            }
+            
             Console.WriteLine("Cliente cadastrado com sucesso!");
 
             Menu();
@@ -59,14 +86,25 @@ namespace Cadastro
 
             Thread.Sleep(1000);
             Console.WriteLine("Clientes Cadastrados: ");
-            
+
+            if (pessoas.Count == 0)
+            {
+                Console.Clear();
+
+                Thread.Sleep(500);
+                Console.WriteLine("Nenhum cliente cadastrado ainda.");
+                Thread.Sleep(3000);
+
+                return;
+            }
+
             foreach (var pessoa in pessoas)
             {                
                 Console.WriteLine($"{cont}. {pessoa}");
                 cont++;
             }
           
-            Thread.Sleep(2000);
+            Thread.Sleep(4000);
 
             Menu();
         }
