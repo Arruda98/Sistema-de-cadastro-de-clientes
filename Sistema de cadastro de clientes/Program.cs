@@ -22,7 +22,7 @@ namespace Cadastro
 
             Console.WriteLine("Escolha uma opção: ");
             Console.WriteLine("1 - Cadastrar Cliente\n2 - Listar Clientes\n3 - Remover Clientes\n4 - Sair\n");
-            
+
             resposta = double.Parse(Console.ReadLine());
 
             switch (resposta)
@@ -40,7 +40,6 @@ namespace Cadastro
         public static void Cadastro()
         {
             Console.Clear();
-
             Console.WriteLine("====== Cadastro de Cliente ======");
 
             while (true)
@@ -48,31 +47,24 @@ namespace Cadastro
                 Console.Clear();
 
                 Console.WriteLine("Digite o nome do Cliente: ");
-                pessoas.Add(Console.ReadLine());
+                var cliente = Console.ReadLine();
 
-                Console.Clear();
-
-                Console.WriteLine("Deseja adicionar outro cliente?");
-                var resposta = Console.ReadLine();
-
-                if (resposta == null || resposta == "")
+                if (cliente == null || cliente == "")
                 {
                     Console.Clear();
-
-                    Console.WriteLine("Você digitou errado, tente novamente.");
-                    Thread.Sleep(1000);
+                    Console.WriteLine("Resposta inválida, tente novamente!");
+                    Thread.Sleep(3000);
                     continue;
                 }
+                
+                Console.Clear();
 
-                else if (resposta == "Sim")
-                {
+                if (PegarRespostaPositivaNegativa("Deseja adicionar outro cliente?"))
                     continue;
-                }
-
                 else
                     break;
             }
-            
+
             Console.WriteLine("Cliente cadastrado com sucesso!");
 
             Menu();
@@ -99,11 +91,11 @@ namespace Cadastro
             }
 
             foreach (var pessoa in pessoas)
-            {                
+            {
                 Console.WriteLine($"{cont}. {pessoa}");
                 cont++;
             }
-          
+
             Thread.Sleep(4000);
 
             Menu();
@@ -130,5 +122,22 @@ namespace Cadastro
             Environment.Exit(0);
         }
 
+        private static bool PegarRespostaPositivaNegativa(string mensagem)
+        {
+            while (true)
+            {
+                Console.WriteLine(mensagem);
+                var input = Console.ReadLine();
+
+                if (input.ToUpper() == "SIM" || input.ToUpper() == "NÃO")
+                {
+                    return input.ToUpper() == "SIM";
+                }
+
+                Console.WriteLine("Você digitou errado, tente novamente.");
+                Thread.Sleep(1000);
+                continue;
+            }
+        }
     }
 }

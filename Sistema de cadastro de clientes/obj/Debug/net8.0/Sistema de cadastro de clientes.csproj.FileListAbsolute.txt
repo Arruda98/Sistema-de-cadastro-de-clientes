@@ -12,3 +12,18 @@ C:\Users\Jefferson\source\repos\Atividades PY para C#\Atividades\Sistema de cada
 C:\Users\Jefferson\source\repos\Atividades PY para C#\Atividades\Sistema de cadastro de clientes\obj\Debug\net8.0\Sistema de cadastro de clientes.pdb
 C:\Users\Jefferson\source\repos\Atividades PY para C#\Atividades\Sistema de cadastro de clientes\obj\Debug\net8.0\Sistema de cadastro de clientes.genruntimeconfig.cache
 C:\Users\Jefferson\source\repos\Atividades PY para C#\Atividades\Sistema de cadastro de clientes\obj\Debug\net8.0\ref\Sistema de cadastro de clientes.dll
+C:\Users\Jefferson\source\repos\Sistema-de-cadastro-de-clientes\Sistema de cadastro de clientes\obj\Debug\net8.0\Sistema de cadastro de clientes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jefferson\source\repos\Sistema-de-cadastro-de-clientes\Sistema de cadastro de clientes\obj\Debug\net8.0\Sistema de cadastro de clientes.AssemblyInfoInputs.cache
+C:\Users\Jefferson\source\repos\Sistema-de-cadastro-de-clientes\Sistema de cadastro de clientes\obj\Debug\net8.0\Sistema de cadastro de clientes.AssemblyInfo.cs
+C:\Users\Jefferson\source\repos\Sistema-de-cadastro-de-clientes\Sistema de cadastro de clientes\obj\Debug\net8.0\Sistema de cadastro de clientes.csproj.CoreCompileInputs.cache
+C:\Users\Jefferson\source\repos\Sistema-de-cadastro-de-clientes\Sistema de cadastro de clientes\obj\Debug\net8.0\Sistema de cadastro de clientes.sourcelink.json
+C:\Users\Jefferson\source\repos\Sistema-de-cadastro-de-clientes\Sistema de cadastro de clientes\obj\Debug\net8.0\Sistema de cadastro de clientes.dll
+C:\Users\Jefferson\source\repos\Sistema-de-cadastro-de-clientes\Sistema de cadastro de clientes\obj\Debug\net8.0\refint\Sistema de cadastro de clientes.dll
+C:\Users\Jefferson\source\repos\Sistema-de-cadastro-de-clientes\Sistema de cadastro de clientes\obj\Debug\net8.0\Sistema de cadastro de clientes.pdb
+C:\Users\Jefferson\source\repos\Sistema-de-cadastro-de-clientes\Sistema de cadastro de clientes\bin\Debug\net8.0\Sistema de cadastro de clientes.exe
+C:\Users\Jefferson\source\repos\Sistema-de-cadastro-de-clientes\Sistema de cadastro de clientes\bin\Debug\net8.0\Sistema de cadastro de clientes.deps.json
+C:\Users\Jefferson\source\repos\Sistema-de-cadastro-de-clientes\Sistema de cadastro de clientes\bin\Debug\net8.0\Sistema de cadastro de clientes.runtimeconfig.json
+C:\Users\Jefferson\source\repos\Sistema-de-cadastro-de-clientes\Sistema de cadastro de clientes\bin\Debug\net8.0\Sistema de cadastro de clientes.dll
+C:\Users\Jefferson\source\repos\Sistema-de-cadastro-de-clientes\Sistema de cadastro de clientes\bin\Debug\net8.0\Sistema de cadastro de clientes.pdb
+C:\Users\Jefferson\source\repos\Sistema-de-cadastro-de-clientes\Sistema de cadastro de clientes\obj\Debug\net8.0\Sistema de cadastro de clientes.genruntimeconfig.cache
+C:\Users\Jefferson\source\repos\Sistema-de-cadastro-de-clientes\Sistema de cadastro de clientes\obj\Debug\net8.0\ref\Sistema de cadastro de clientes.dll
